@@ -1,0 +1,276 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do sim_systolic_input_setup.do
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is pasir@MAVISHAN.
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# ==========================================
+# Compiling Design Files...
+# ==========================================
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 10:45:23 on Dec 15,2025
+# vlog -reportprogress 300 -work work def.v 
+# End time: 10:45:23 on Dec 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 10:45:23 on Dec 15,2025
+# vlog -reportprogress 300 -work work systolic_input_setup.v 
+# -- Compiling module systolic_input_setup
+# 
+# Top level modules:
+# 	systolic_input_setup
+# End time: 10:45:23 on Dec 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 10:45:23 on Dec 15,2025
+# vlog -reportprogress 300 -work work tb_systolic_input_setup.v 
+# -- Compiling module tb_systolic_input_setup
+# 
+# Top level modules:
+# 	tb_systolic_input_setup
+# End time: 10:45:23 on Dec 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ==========================================
+# Starting Simulation...
+# ==========================================
+# vsim -voptargs="+acc" work.tb_systolic_input_setup 
+# Start time: 10:45:24 on Dec 15,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.tb_systolic_input_setup(fast)
+# Loading work.systolic_input_setup(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: pasir  Hostname: MAVISHAN  ProcessID: 4436
+#           Attempting to use alternate WLF file "./wlftr8whmd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftr8whmd
+# ==========================================
+# Running Simulation...
+# ==========================================
+# Loaded image.mem into BRAM (im2col format)
+#   - Each 64-bit word = 8 pixels
+#   - Kernel windows stored consecutively
+# ========================================
+# Systolic Input Setup Testbench
+# BRAM: 64-bit width, 4096 depth
+# ========================================
+# [0] clk=0 rst_n=0 en=0 bram_addr=0x0000 bram_dout=0xxxxxxxxxxxxxxxxx skew_out=0x00000000000000xx
+# [5000] clk=1 rst_n=0 en=0 bram_addr=0x0000 bram_dout=0xxxxxxxxxxxxxxxxx skew_out=0x00000000000000xx
+# [10000] clk=0 rst_n=0 en=0 bram_addr=0x0000 bram_dout=0xxxxxxxxxxxxxxxxx skew_out=0x00000000000000xx
+# [15000] clk=1 rst_n=0 en=0 bram_addr=0x0000 bram_dout=0xxxxxxxxxxxxxxxxx skew_out=0x00000000000000xx
+# [20000] clk=0 rst_n=1 en=0 bram_addr=0x0000 bram_dout=0xxxxxxxxxxxxxxxxx skew_out=0x00000000000000xx
+# [25000] clk=1 rst_n=1 en=0 bram_addr=0x0000 bram_dout=0xxxxxxxxxxxxxxxxx skew_out=0x00000000000000xx
+# 
+# [30000] Reset released
+# 
+# --- Test 1: Sequential Data Feed ---
+# [30000] clk=0 rst_n=1 en=0 bram_addr=0x0000 bram_dout=0xxxxxxxxxxxxxxxxx skew_out=0x00000000000000xx
+# [35000] clk=1 rst_n=1 en=0 bram_addr=0x0000 bram_dout=0xxxxxxxxxxxxxxxxx skew_out=0x00000000000000xx
+# [40000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0xxxxxxxxxxxxxxxxx skew_out=0x00000000000000xx
+# [45000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x000000000000xx04
+# [50000] BRAM[0] = 0x0a04070308050a04, skew_out = 0x000000000000xx04
+# [50000] clk=0 rst_n=1 en=1 bram_addr=0x0001 bram_dout=0x0a04070308050a04 skew_out=0x000000000000xx04
+# [55000] clk=1 rst_n=1 en=1 bram_addr=0x0001 bram_dout=0x0a00070302050a08 skew_out=0x0000000000xx0a08
+# [60000] BRAM[1] = 0x0a00070302050a08, skew_out = 0x0000000000xx0a08
+# [60000] clk=0 rst_n=1 en=1 bram_addr=0x0002 bram_dout=0x0a00070302050a08 skew_out=0x0000000000xx0a08
+# [65000] clk=1 rst_n=1 en=1 bram_addr=0x0002 bram_dout=0x0800070802050408 skew_out=0x00000000xx050a08
+# [70000] BRAM[2] = 0x0800070802050408, skew_out = 0x00000000xx050a08
+# [70000] clk=0 rst_n=1 en=1 bram_addr=0x0003 bram_dout=0x0800070802050408 skew_out=0x00000000xx050a08
+# [75000] clk=1 rst_n=1 en=1 bram_addr=0x0003 bram_dout=0x0800070802080408 skew_out=0x000000xx08050408
+# [80000] BRAM[3] = 0x0800070802080408, skew_out = 0x000000xx08050408
+# [80000] clk=0 rst_n=1 en=1 bram_addr=0x0004 bram_dout=0x0800070802080408 skew_out=0x000000xx08050408
+# [85000] clk=1 rst_n=1 en=1 bram_addr=0x0004 bram_dout=0x080407080e080407 skew_out=0x0000xx0302050407
+# [90000] BRAM[4] = 0x080407080e080407, skew_out = 0x0000xx0302050407
+# [90000] clk=0 rst_n=1 en=1 bram_addr=0x0005 bram_dout=0x080407080e080407 skew_out=0x0000xx0302050407
+# [95000] clk=1 rst_n=1 en=1 bram_addr=0x0005 bram_dout=0x030407030e080e07 skew_out=0x00xx070302080407
+# [100000] BRAM[5] = 0x030407030e080e07, skew_out = 0x00xx070302080407
+# [100000] clk=0 rst_n=1 en=1 bram_addr=0x0006 bram_dout=0x030407030e080e07 skew_out=0x00xx070302080407
+# [105000] clk=1 rst_n=1 en=1 bram_addr=0x0006 bram_dout=0x03040c030e020e07 skew_out=0xxx04070802080e07
+# [110000] BRAM[6] = 0x03040c030e020e07, skew_out = 0xxx04070802080e07
+# [110000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x03040c030e020e07 skew_out=0xxx04070802080e07
+# [115000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x0a0007080e080e02
+# [120000] BRAM[7] = 0x030a0c0307020e02, skew_out = 0x0a0007080e080e02
+# 
+# --- Waiting for pipeline delay ---
+# [120000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x0a0007080e080e02
+# [125000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x0a0007080e020e02
+# [130000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x0a0007080e020e02
+# [135000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x080007030e020e02
+# [140000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x080007030e020e02
+# [145000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x0804070307020e02
+# [150000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x0804070307020e02
+# [155000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x08040c0307020e02
+# [160000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x08040c0307020e02
+# [165000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x03040c0307020e02
+# [170000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x03040c0307020e02
+# [175000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x030a0c0307020e02
+# [180000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x030a0c0307020e02
+# [185000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x030a0c0307020e02
+# [190000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x030a0c0307020e02
+# [195000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x030a0c0307020e02
+# [200000] Pipeline filled, skew_out = 0x030a0c0307020e02
+# 
+# --- Test 2: Enable/Disable Control ---
+# [200000] clk=0 rst_n=1 en=1 bram_addr=0x0008 bram_dout=0x030a0c0307020e02 skew_out=0x030a0c0307020e02
+# [205000] clk=1 rst_n=1 en=1 bram_addr=0x0008 bram_dout=0x050a0c0c07020c02 skew_out=0x030a0c0307020e02
+# [210000] EN=1, BRAM[8] = 0x050a0c0c07020c02
+# [210000] clk=0 rst_n=1 en=1 bram_addr=0x0008 bram_dout=0x050a0c0c07020c02 skew_out=0x030a0c0307020e02
+# [215000] clk=1 rst_n=1 en=1 bram_addr=0x0008 bram_dout=0x050a0c0c07020c02 skew_out=0x030a0c0307020c02
+# [220000] clk=0 rst_n=1 en=1 bram_addr=0x0008 bram_dout=0x050a0c0c07020c02 skew_out=0x030a0c0307020c02
+# [225000] clk=1 rst_n=1 en=1 bram_addr=0x0008 bram_dout=0x050a0c0c07020c02 skew_out=0x030a0c0307020c02
+# [230000] clk=0 rst_n=1 en=1 bram_addr=0x0008 bram_dout=0x050a0c0c07020c02 skew_out=0x030a0c0307020c02
+# [235000] clk=1 rst_n=1 en=1 bram_addr=0x0008 bram_dout=0x050a0c0c07020c02 skew_out=0x030a0c0307020c02
+# [240000] EN=0 (disabled)
+# [240000] clk=0 rst_n=1 en=0 bram_addr=0x0009 bram_dout=0x050a0c0c07020c02 skew_out=0x030a0c0307020c02
+# [245000] clk=1 rst_n=1 en=0 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x030a0c0307020c02
+# [250000] clk=0 rst_n=1 en=0 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x030a0c0307020c02
+# [255000] clk=1 rst_n=1 en=0 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x030a0c0307020c02
+# [260000] clk=0 rst_n=1 en=0 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x030a0c0307020c02
+# [265000] clk=1 rst_n=1 en=0 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x030a0c0307020c02
+# [270000] EN=0, skew_out should not change
+# [270000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x030a0c0307020c02
+# [275000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x030a0c0c07020c02
+# [280000] EN=1 (re-enabled)
+# 
+# --- Test 3: Burst Read ---
+# [280000] clk=0 rst_n=1 en=1 bram_addr=0x0010 bram_dout=0x050a0e0c07070c02 skew_out=0x030a0c0c07020c02
+# [285000] clk=1 rst_n=1 en=1 bram_addr=0x0010 bram_dout=0x0b010a0905030906 skew_out=0x030a0c0c07070c06
+# [290000] BRAM[16] = 0x0b010a0905030906
+# [290000] clk=0 rst_n=1 en=1 bram_addr=0x0011 bram_dout=0x0b010a0905030906 skew_out=0x030a0c0c07070c06
+# [295000] clk=1 rst_n=1 en=1 bram_addr=0x0011 bram_dout=0x01010a0a05030b06 skew_out=0x030a0c0c07070906
+# [300000] BRAM[17] = 0x01010a0a05030b06
+# [300000] clk=0 rst_n=1 en=1 bram_addr=0x0012 bram_dout=0x01010a0a05030b06 skew_out=0x030a0c0c07070906
+# [305000] clk=1 rst_n=1 en=1 bram_addr=0x0012 bram_dout=0x01010e0a05000b06 skew_out=0x050a0c0c07030b06
+# [310000] BRAM[18] = 0x01010e0a05000b06
+# [310000] clk=0 rst_n=1 en=1 bram_addr=0x0013 bram_dout=0x01010e0a05000b06 skew_out=0x050a0c0c07030b06
+# [315000] clk=1 rst_n=1 en=1 bram_addr=0x0013 bram_dout=0x010b0e0a0e000b04 skew_out=0x050a0e0c05030b04
+# [320000] BRAM[19] = 0x010b0e0a0e000b04
+# [320000] clk=0 rst_n=1 en=1 bram_addr=0x0014 bram_dout=0x010b0e0a0e000b04 skew_out=0x050a0e0c05030b04
+# [325000] clk=1 rst_n=1 en=1 bram_addr=0x0014 bram_dout=0x080b0e0d0e000604 skew_out=0x050a0e0905000b04
+# [330000] BRAM[20] = 0x080b0e0d0e000604
+# [330000] clk=0 rst_n=1 en=1 bram_addr=0x0015 bram_dout=0x080b0e0d0e000604 skew_out=0x050a0e0905000b04
+# [335000] clk=1 rst_n=1 en=1 bram_addr=0x0015 bram_dout=0x080b090d0e070604 skew_out=0x050a0a0a05000604
+# [340000] BRAM[21] = 0x080b090d0e070604
+# [340000] clk=0 rst_n=1 en=1 bram_addr=0x0016 bram_dout=0x080b090d0e070604 skew_out=0x050a0a0a05000604
+# [345000] clk=1 rst_n=1 en=1 bram_addr=0x0016 bram_dout=0x080c090d02070600 skew_out=0x05010a0a0e000600
+# [350000] BRAM[22] = 0x080c090d02070600
+# [350000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x080c090d02070600 skew_out=0x05010a0a0e000600
+# [355000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x0b010e0a0e070600
+# [360000] BRAM[23] = 0x040c090702070900
+# [360000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x0b010e0a0e070600
+# [365000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x01010e0d0e070900
+# [370000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x01010e0d0e070900
+# [375000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x010b0e0d02070900
+# [380000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x010b0e0d02070900
+# [385000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x010b090d02070900
+# [390000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x010b090d02070900
+# [395000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x080b090702070900
+# [400000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x080b090702070900
+# [405000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x080c090702070900
+# [410000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x080c090702070900
+# [415000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x080c090702070900
+# [420000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x080c090702070900
+# [425000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x040c090702070900
+# [430000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x040c090702070900
+# [435000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x040c090702070900
+# [440000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x040c090702070900
+# [445000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x040c090702070900
+# [450000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x040c090702070900
+# [455000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x040c090702070900
+# 
+# --- Test 4: Reset During Operation ---
+# [460000] clk=0 rst_n=0 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x0000000000000000
+# [465000] clk=1 rst_n=0 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x0000000000000000
+# [470000] clk=0 rst_n=0 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x0000000000000000
+# [475000] clk=1 rst_n=0 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x0000000000000000
+# [480000] Reset asserted, skew_out = 0x0000000000000000
+# [480000] clk=0 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x0000000000000000
+# [485000] clk=1 rst_n=1 en=1 bram_addr=0x0017 bram_dout=0x040c090702070900 skew_out=0x0000000000000900
+# [490000] Reset released
+# [490000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x040c090702070900 skew_out=0x0000000000000900
+# [495000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0000000000070904
+# [500000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0000000000070904
+# [505000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0000000002070a04
+# [510000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0000000002070a04
+# [515000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0000000702050a04
+# [520000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0000000702050a04
+# [525000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0000090708050a04
+# [530000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0000090708050a04
+# [535000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x000c090308050a04
+# [540000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x000c090308050a04
+# [545000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x040c070308050a04
+# [550000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x040c070308050a04
+# [555000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0404070308050a04
+# [560000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0404070308050a04
+# [565000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0a04070308050a04
+# [570000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0a04070308050a04
+# [575000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0a04070308050a04
+# [580000] clk=0 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0a04070308050a04
+# [585000] clk=1 rst_n=1 en=1 bram_addr=0x0000 bram_dout=0x0a04070308050a04 skew_out=0x0a04070308050a04
+# 
+# --- Test 5: Random Access ---
+# [590000] clk=0 rst_n=1 en=1 bram_addr=0x0005 bram_dout=0x0a04070308050a04 skew_out=0x0a04070308050a04
+# [595000] clk=1 rst_n=1 en=1 bram_addr=0x0005 bram_dout=0x030407030e080e07 skew_out=0x0a04070308050a07
+# [600000] clk=0 rst_n=1 en=1 bram_addr=0x0002 bram_dout=0x030407030e080e07 skew_out=0x0a04070308050a07
+# [605000] clk=1 rst_n=1 en=1 bram_addr=0x0002 bram_dout=0x0800070802050408 skew_out=0x0a04070308050e08
+# [610000] clk=0 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x0800070802050408 skew_out=0x0a04070308050e08
+# [615000] clk=1 rst_n=1 en=1 bram_addr=0x0007 bram_dout=0x030a0c0307020e02 skew_out=0x0a04070308080402
+# [620000] clk=0 rst_n=1 en=1 bram_addr=0x0001 bram_dout=0x030a0c0307020e02 skew_out=0x0a04070308080402
+# [625000] clk=1 rst_n=1 en=1 bram_addr=0x0001 bram_dout=0x0a00070302050a08 skew_out=0x0a0407030e050e08
+# [630000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x0a00070302050a08 skew_out=0x0a0407030e050e08
+# [635000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x0a04070302020a02
+# [640000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x0a04070302020a02
+# [645000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x0a04070807050c02
+# [650000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x0a04070807050c02
+# [655000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x0a04070302070c02
+# [660000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x0a04070302070c02
+# [665000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x03000c0307070c02
+# [670000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x03000c0307070c02
+# [675000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x080a070c07070c02
+# [680000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x080a070c07070c02
+# [685000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x03000e0c07070c02
+# [690000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x03000e0c07070c02
+# [695000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x0a0a0e0c07070c02
+# [700000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x0a0a0e0c07070c02
+# [705000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# [710000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# [715000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# [720000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# [725000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# [730000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# [735000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# 
+# ========================================
+# Simulation completed successfully!
+# ========================================
+# [740000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# [745000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# [750000] clk=0 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# [755000] clk=1 rst_n=1 en=1 bram_addr=0x0009 bram_dout=0x050a0e0c07070c02 skew_out=0x050a0e0c07070c02
+# ** Note: $finish    : tb_systolic_input_setup.v(200)
+#    Time: 760 ns  Iteration: 0  Instance: /tb_systolic_input_setup
+# 1
+# Break in Module tb_systolic_input_setup at tb_systolic_input_setup.v line 200
+# 0 ps
+# 798 ns
+# ==========================================
+# Simulation Complete!
+# Check waveform for results
+# ==========================================
+# Break key hit
+# End time: 10:58:47 on Dec 15,2025, Elapsed time: 0:13:23
+# Errors: 0, Warnings: 3

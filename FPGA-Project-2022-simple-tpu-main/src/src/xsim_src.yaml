@@ -1,0 +1,57 @@
+config:
+    incremental_compilation:    true
+    relax_compilation:          true
+    debug:                      typical
+    multi_threading:            "8"
+    
+compiled_libs:
+    - "xbip_utils_v3_0_14"
+    - "mult_gen_v12_0_22"
+    - "tri_mode_ethernet_mac_v9_0_35"
+    - "c_reg_fd_v12_0_10"
+    - "c_shift_ram_v12_0_18"
+    - "xbip_dsp48_wrapper_v3_0_6"
+    - "xbip_pipe_v3_0_10"
+    - "c_addsub_v12_0_19"
+    - "c_counter_binary_v12_0_20"
+    - "xlconstant_v1_1_9"
+    - "util_vector_logic_v2_0_4"
+    - "uvm"
+    - "unisims_ver"
+    - "unimacro_ver"
+    - "secureip"
+    - "xpm"   
+
+work_lib:           xil_defaultlib
+snapshot:           tb_top
+top_module:         tb_top
+tcl_batch:          cmd.tcl
+simulate_log:       simulate.log
+elaborate_log:      elaborate.log
+gui:                true
+
+
+#src files
+src_groups: 
+    - name: design_ip
+      include_dirs: 
+      file_type: verilog
+      src_files: 
+
+    - name: design_src
+      include_dirs:
+      file_type: verilog
+      src_files:
+        - data_feeder.v
+    
+    - name: sim
+      include_dirs:
+      file_type: verilog
+      src_files:
+        - tb_data_feeder.v                                     
+
+    - name: vhdl_files
+      include_dirs: 
+      file_type: vhdl
+      src_files:
+    

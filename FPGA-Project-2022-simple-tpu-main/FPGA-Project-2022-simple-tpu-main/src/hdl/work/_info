@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/pasir/Desktop/Github/ADS_Processor/ADS_Processor/FPGA-Project-2022-simple-tpu-main/FPGA-Project-2022-simple-tpu-main/src/hdl
+T_opt
+!s110 1765766659
+V^eGN`:Y]a];zW6d_H48180
+Z2 04 23 4 work tb_systolic_input_setup fast 0
+=1-7c4d8f9bc2fe-693f7602-244-1154
+R0
+Z3 !s12b OEM100
+Z4 !s124 OEM10U2 
+Z5 o-quiet -auto_acc_if_foreign -work work +acc
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2023.3;77
+R1
+T_opt1
+!s110 1765775726
+V=:eH_VLD=[17IH^=RPZIJ0
+R2
+=1-7c4d8f9bc2fe-693f996d-196-4d18
+R0
+R3
+R4
+R5
+R6
+n@_opt1
+R7
+vsystolic_input_setup
+2systolic_input_setup.v
+Z8 !s110 1765775723
+!i10b 1
+!s100 =53=UG;0m^ABC?GRc4GYH3
+Ih]AdE7>J3^SGfdAhCh4Ie2
+R1
+w1765698593
+8systolic_input_setup.v
+Fsystolic_input_setup.v
+!i122 0
+L0 21 45
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z11 !s108 1765775723.000000
+!s107 def.v|systolic_input_setup.v|
+!s90 -reportprogress|300|-work|work|systolic_input_setup.v|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vtb_systolic_input_setup
+2tb_systolic_input_setup.v
+R8
+!i10b 1
+!s100 o0feR96bHmQ^FZ2:>LI<63
+I7_PjJ:eblY<;NACU7e:TO3
+R1
+w1765775461
+8tb_systolic_input_setup.v
+Ftb_systolic_input_setup.v
+!i122 1
+L0 12 209
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 def.v|tb_systolic_input_setup.v|
+!s90 -reportprogress|300|-work|work|tb_systolic_input_setup.v|
+!i113 0
+R12
+R6

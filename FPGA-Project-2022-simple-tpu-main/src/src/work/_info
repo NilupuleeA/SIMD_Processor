@@ -1,0 +1,73 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/dell/Documents/SIMD_Processor/src
+vdata_feeder
+2data_feeder.v
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1764798337
+!i10b 1
+!s100 n1SEI@O`kbBl9TL@QjH3e2
+ITkdn4`HN:8RaJozMN?:MX3
+S1
+R1
+w1764798198
+8data_feeder.v
+Fdata_feeder.v
+!i122 0
+L0 1 67
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z6 !s108 1764798337.000000
+!s107 data_feeder.v|
+!s90 -64|-incr|-mfcu|-sv|data_feeder.v|
+!i113 0
+Z7 o-64 -mfcu -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vtb_data_feeder
+2tb_data_feeder.v
+R2
+R3
+!i10b 1
+!s100 Y=N3VW3V9[<UIi]DDYU]b3
+I2I[Cg;^S>]GIPU:PFJA1S2
+S1
+R1
+w1764798226
+8tb_data_feeder.v
+Ftb_data_feeder.v
+!i122 1
+L0 3 77
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 tb_data_feeder.v|
+!s90 -64|-incr|-mfcu|-sv|tb_data_feeder.v|
+!i113 0
+R7
+R8
+Ttestbench_opt
+R3
+VkL<>388BH3bPE9MZ@b3YV1
+04 14 4 work tb_data_feeder fast 0
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o+acc=npr
+R8
+ntestbench_opt
+OL;O;2023.3;77

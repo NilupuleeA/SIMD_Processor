@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Dec  4 03:25:01 2025
+# Process ID         : 52898
+# Current directory  : /home/dell/Documents/SIMD_Processor/src
+# Command line       : xsim -log simulate.log -source {xsim.dir/tb_top/xsim_script.tcl}
+# Log file           : /home/dell/Documents/SIMD_Processor/src/simulate.log
+# Journal file       : /home/dell/Documents/SIMD_Processor/src/xsim.jou
+# Running On         : dell-Inspiron-3501
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency      : 4169.331 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16484 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18631 MB
+# Available Virtual  : 12537 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/tb_top/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+# xsim {tb_top} -autoloadwcfg -tclbatch {cmd.tcl} -key Behavioral:sim_1:Functional:tb_top
+Time resolution is 1 ps
+source cmd.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##     if { [llength [get_objects]] > 0 } {
+##         add_wave /  
+##         set_property needs_save false [current_wave_config]  
+##     } else {
+##         send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window, go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##     }
+## }
+## run 100ms
+               26000 |    0  |      x      |       0      |       0
+--- Starting Pixel Feed (Image Width = 4) ---
+Time | Input | R0_Out (Top) | R1_Out (Mid) | R2_Out (Bot)
+               36000 |    1  |      x      |      x      |       0
+               46000 |    2  |      x      |      x      |       0
+               56000 |    3  |      x      |      x      |       0
+               66000 |    4  |      x      |      x      |       1
+               76000 |    5  |      x      |       0      |       2
+               86000 |    6  |      x      |       0      |       3
+               96000 |    7  |      x      |       0      |       4
+              106000 |    8  |      x      |       1      |       5
+              116000 |    9  |       0      |       2      |       6
+              126000 |   10  |       0      |       3      |       7
+              136000 |   11  |       0      |       4      |       8
+              146000 |   12  |       1      |       5      |       9
+              156000 |   13  |       2      |       6      |      10
+              166000 |   14  |       3      |       7      |      11
+              176000 |   15  |       4      |       8      |      12
+              186000 |   16  |       5      |       9      |      13
+              196000 |   17  |       6      |      10      |      14
+              206000 |   18  |       7      |      11      |      15
+              216000 |   19  |       8      |      12      |      16
+              226000 |   20  |       9      |      13      |      17
+              236000 |    0  |      10      |      14      |      18
+              246000 |    0  |      11      |      15      |      19
+              256000 |    0  |      12      |      16      |      20
+              266000 |    0  |      13      |      17      |       0
+--- Simulation Done ---
+$finish called at time : 270 ns : File "/home/dell/Documents/SIMD_Processor/src/tb_data_feeder.v" Line 66
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting xsim at Thu Dec  4 03:43:20 2025...

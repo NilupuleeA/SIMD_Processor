@@ -1,0 +1,45 @@
+# do run.do
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 03:15:37 on Dec 04,2025
+# vlog -64 -incr -mfcu -sv data_feeder.v 
+# -- Compiling module data_feeder
+# 
+# Top level modules:
+# 	data_feeder
+# End time: 03:15:37 on Dec 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 03:15:37 on Dec 04,2025
+# vlog -64 -incr -mfcu -sv tb_data_feeder.v 
+# -- Compiling module tb_data_feeder
+# 
+# Top level modules:
+# 	tb_data_feeder
+# End time: 03:15:37 on Dec 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vopt 2023.3 Compiler 2023.07 Jul 17 2023
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 03:15:37 on Dec 04,2025
+# vopt "+acc=npr" tb_data_feeder -o testbench_opt 
+# 
+# Top level modules:
+# 	tb_data_feeder
+# 
+# Analyzing design...
+# -- Loading module tb_data_feeder
+# -- Loading module data_feeder
+# Optimizing 2 design-units (inlining 0/2 module instances):
+# -- Optimizing module data_feeder(fast)
+# -- Optimizing module tb_data_feeder(fast)
+# Optimized design name is testbench_opt
+# End time: 03:15:38 on Dec 04,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vsim testbench_opt -wlf mywlf.wlf 
+# Start time: 03:15:38 on Dec 04,2025
+# 
+# ** License Issue: License server does not support this feature (intelqsimstarter)
+# ** License Issue: Feature has expired. (/home/dell/intelFPGA/LR-206197_License.dat)
+# ** Error: Failure to obtain a Verilog simulation license. Unable to checkout 'intelqsimstarter' license.
+# Error loading design
+# End time: 03:15:38 on Dec 04,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
