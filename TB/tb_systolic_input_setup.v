@@ -77,7 +77,7 @@ module tb_systolic_input_setup();
     // Load im2col image data from .mem file
     // Each 64-bit word contains 8 x 8-bit pixels
     // Format: kernel windows stored consecutively for systolic array
-    $readmemh("../../../../input/image.mem", bram_memory);
+    $readmemh("../input/image.mem", bram_memory);
     
     $display("Loaded image.mem into BRAM (im2col format)");
     $display("  - Each 64-bit word = 8 pixels");
